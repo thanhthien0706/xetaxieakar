@@ -73,12 +73,15 @@ body {
 /* Header / Nav */
 
 .site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
   background: #fff;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .header-inner {
-  max-width: 1450px;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 0.75rem 20px;
   display: flex;
@@ -96,7 +99,7 @@ body {
 }
 
 .logo-icon {
-  height: 56px;
+  height: 90px;
   width: auto;
 }
 
@@ -902,7 +905,7 @@ body {
   }
 
   .logo-icon {
-    height: 42px;
+    height: 54px;
   }
 
   .logo-text {
@@ -2778,7 +2781,7 @@ body {
 }
 
 .footer-logo-icon {
-  height: 52px;
+  height: 72px;
   width: auto;
 }
 
