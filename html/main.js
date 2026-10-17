@@ -66,6 +66,16 @@ if (dangkyForm) {
   });
 }
 
+// Quick booking bar: no backend on this static page, just confirm to the user
+const quickBookingForm = document.getElementById('quickBookingForm');
+if (quickBookingForm) {
+  quickBookingForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    alert('Cảm ơn bạn đã đặt xe. Vui lòng gọi hotline 0368 395 396 để được hỗ trợ đặt xe nhanh nhất.');
+    quickBookingForm.reset();
+  });
+}
+
 // Smooth scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(a => {
   a.addEventListener('click', e => {
