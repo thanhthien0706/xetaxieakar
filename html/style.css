@@ -51,8 +51,7 @@ table {
 }
 
 /* ==============================================
-   2-7. SITE B DESIGN SYSTEM, HEADER, FOOTER, COMPONENTS
-   (verbatim from taxigocongdongthap.com /css/style.css, asset paths localized)
+   2-7. DESIGN SYSTEM, HEADER, FOOTER, COMPONENTS
    ============================================== */
 :root {
   --color-primary: #0745be;
@@ -880,7 +879,7 @@ body {
    ⚠️ Mất rule này = form hỏng IM LẶNG: khách thật (hoặc autofill của trình duyệt) điền vào ô
    hiện ra, server coi là bot và âm thầm bỏ qua, vẫn trả về thành công. Mất khách mà không ai
    biết, không log, không lỗi. Sau mọi lần sửa/merge file CSS này phải kiểm lại:
-     curl -s https://taxigocongdongthap.com/css/style.css | grep -c hp-field   # phải khác 0 */
+     grep -c hp-field style.css   # phải khác 0 */
 .hp-field {
   position: absolute !important;
   left: -9999px !important;
