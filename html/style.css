@@ -186,10 +186,11 @@ body {
   background: #fff;
   border-radius: 12px;
   box-shadow: 0 20px 45px rgba(0, 0, 0, 0.15);
-  padding: 1.25rem;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(240px, 1fr));
-  gap: 0.25rem 2rem;
+  padding: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  min-width: 160px;
   opacity: 0;
   visibility: hidden;
   transform: translateX(-50%) translateY(8px);
@@ -219,7 +220,8 @@ body {
   white-space: nowrap;
 }
 
-.nav-dropdown a:hover {
+.nav-dropdown a:hover,
+.nav-dropdown a.active {
   background: #e8f0fc;
   color: var(--color-primary) !important;
 }
@@ -423,14 +425,13 @@ body {
     padding: 0 0 0.5rem 1rem;
     margin-top: 0;
     display: none;
-    grid-template-columns: 1fr;
     gap: 0;
     opacity: 1;
     visibility: visible;
   }
 
   .has-dropdown.is-open .nav-dropdown {
-    display: grid;
+    display: flex;
     transform: none;
   }
 

@@ -39,13 +39,19 @@ document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') closeNav();
 });
 
-// Dropdown toggle on mobile tap
+// Dropdown toggle (tap on mobile/tablet, click toggle on desktop in addition to hover)
 const dropdownToggle = document.querySelector('.nav-dropdown-toggle');
 if (dropdownToggle) {
+  const dropdownItem = dropdownToggle.closest('.has-dropdown');
   dropdownToggle.addEventListener('click', (e) => {
-    if (window.innerWidth <= 1273) {
-      e.preventDefault();
-      dropdownToggle.closest('.has-dropdown')?.classList.toggle('is-open');
+    e.preventDefault();
+    const isOpen = dropdownItem?.classList.toggle('is-open');
+    dropdownToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+  document.addEventListener('click', (e) => {
+    if (dropdownItem && !dropdownItem.contains(e.target)) {
+      dropdownItem.classList.remove('is-open');
+      dropdownToggle.setAttribute('aria-expanded', 'false');
     }
   });
 }
