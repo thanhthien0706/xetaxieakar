@@ -179,7 +179,7 @@ body {
 
 .nav-dropdown {
   position: absolute;
-  top: 100%;
+  top: 70%;
   left: 50%;
   margin-top: 0.75rem;
   background: #fff;
@@ -189,7 +189,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.15rem;
-  min-width: 160px;
+  min-width: 230px;
   opacity: 0;
   visibility: hidden;
   transform: translateX(-50%) translateY(8px);
@@ -3708,6 +3708,7 @@ body {
 .price-card {
   display: flex;
   flex-direction: column;
+  scroll-margin-top: 110px;
   background: #fff;
   border: 1px solid #eef1f6;
   border-radius: 22px;
@@ -3762,6 +3763,24 @@ body {
   background: var(--color-accent);
   padding: 0.2rem 0.65rem;
   border-radius: 50px;
+}
+
+.price-card-detail-link {
+  display: inline-block;
+  margin-left: 0.5rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.price-card-detail-link:hover {
+  text-decoration: underline;
+}
+
+.price-cards-grid.single {
+  grid-template-columns: minmax(0, 480px);
+  justify-content: center;
 }
 
 .price-tiers {

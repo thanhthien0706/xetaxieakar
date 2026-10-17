@@ -35,12 +35,14 @@
           <li><a href="/gia-dich-vu" class="active">Giá dịch vụ</a></li>
           <li class="has-dropdown">
             <a href="#" class="nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false">
-              Chính sách
+              Dịch vụ
               <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6" /></svg>
             </a>
             <div class="nav-dropdown">
-              <a href="/dich-vu">Dịch vụ</a>
-              <a href="/bao-mat">Bảo mật</a>
+              <a href="/van-chuyen-hanh-khach">Vận chuyển hành khách</a>
+              <a href="/dua-don-san-bay">Đưa đón sân bay</a>
+              <a href="/xe-hop-dong-du-lich">Xe hợp đồng du lịch</a>
+              <a href="/gia-dich-vu">Xem bảng giá đầy đủ</a>
             </div>
           </li>
           <li><a href="/gioi-thieu">Giới thiệu</a></li>
@@ -101,16 +103,17 @@
         </div>
 
         <div class="price-cards-grid">
-          <div class="price-card">
+          <div class="price-card" id="van-chuyen-hanh-khach">
             <div class="price-card-head">
               <span class="price-card-icon">
                 <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true">
-                  <path d="M5 11l1.2-3.6A2 2 0 0 1 8.1 6h7.8a2 2 0 0 1 1.9 1.4L19 11h.5A1.5 1.5 0 0 1 21 12.5V16a1 1 0 0 1-1 1h-1a2 2 0 1 1-4 0H9a2 2 0 1 1-4 0H4a1 1 0 0 1-1-1v-3.5A1.5 1.5 0 0 1 4.5 11H5zm2.2-5-1.1 5h11.8l-1.1-5H7.2zM7 15.5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm10 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                  <path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z" />
                 </svg>
               </span>
               <div>
                 <h3>Vận Chuyển Hành Khách</h3>
                 <span class="price-vehicle">Xe 4 chỗ</span>
+                <a href="/van-chuyen-hanh-khach" class="price-card-detail-link">Xem chi tiết →</a>
               </div>
             </div>
 
@@ -146,7 +149,7 @@
             </a>
           </div>
 
-          <div class="price-card">
+          <div class="price-card" id="dua-don-san-bay">
             <div class="price-card-head">
               <span class="price-card-icon">
                 <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true">
@@ -156,6 +159,7 @@
               <div>
                 <h3>Đưa Đón Sân Bay</h3>
                 <span class="price-vehicle">Xe 7 chỗ</span>
+                <a href="/dua-don-san-bay" class="price-card-detail-link">Xem chi tiết →</a>
               </div>
             </div>
 
@@ -187,6 +191,41 @@
 
             <a href="tel:0368395396" class="price-card-cta">
               Đặt xe ngay
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+            </a>
+          </div>
+
+          <div class="price-card" id="xe-hop-dong-du-lich">
+            <div class="price-card-head">
+              <span class="price-card-icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true">
+                  <path d="M12 2 2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                </svg>
+              </span>
+              <div>
+                <h3>Xe Hợp Đồng Du Lịch</h3>
+                <span class="price-vehicle">Xe 4 - 7 chỗ</span>
+                <a href="/xe-hop-dong-du-lich" class="price-card-detail-link">Xem chi tiết →</a>
+              </div>
+            </div>
+
+            <ul class="price-notes">
+              <li>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5" /></svg>
+                Đưa đón theo lịch trình linh hoạt, trọn gói theo ngày hoặc theo chuyến
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5" /></svg>
+                Phù hợp du lịch, công tác, sự kiện, đưa đón đoàn
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5" /></svg>
+                Báo giá cụ thể theo lộ trình và thời gian sử dụng
+              </li>
+            </ul>
+
+            <a href="tel:0368395396" class="price-card-cta">
+              Liên hệ báo giá
               <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
             </a>
           </div>
